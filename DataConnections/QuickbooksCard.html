@@ -1,0 +1,21 @@
+<script lang="ts">
+  import DataConnectionConnectButton from '$lib/DataConnection/ConnectButton.svelte';
+</script>
+
+<div class="card w-96 bg-base-100 shadow-md">
+  <div class="title"
+       style="display: flex; align-items: center; gap-3; align-self: stretch;">
+    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+    	<path
+	    	fill-rule="evenodd"
+		    clip-rule="evenodd"
+		    d="M25.6663 14.0007C25.6663 20.444 20.443 25.6673 13.9997 25.6673C7.55635 25.6673 2.33301 20.444 2.33301 14.0007C2.33301 7.55733 7.55635 2.33398 13.9997 2.33398C20.443 2.33398 25.6663 7.55733 25.6663 14.0007ZM10.1108 18.5377C7.59597 18.5377 5.57375 16.5155 5.57375 14.0007C5.57375 11.4859 7.59597 9.46366 10.1108 9.46366H13.3515V21.6488C12.4182 21.6488 11.6663 20.897 11.6663 19.9637V11.1488H10.1108C8.5293 11.1488 7.25893 12.4192 7.25893 14.0007C7.25893 15.5822 8.5293 16.8525 10.1108 16.8525H10.7589V18.5377H10.1108ZM17.2404 9.46366H17.8886C20.4034 9.46366 22.4256 11.4859 22.4256 14.0007C22.4256 16.5155 20.4034 18.5377 17.8886 18.5377H14.6478V6.35255C15.5812 6.35255 16.333 7.1044 16.333 8.03773V16.8525H17.8886C19.47 16.8525 20.7404 15.5822 20.7404 14.0007C20.7404 12.4192 19.47 11.1488 17.8886 11.1488H17.2404V9.46366Z"
+		    fill="#2CA01C"/>
+    </svg>
+    <h3 class="sans-text-md-medium; color: Text-Primary;">QuickBooks</h3>
+  </div>
+  <p class="text-sm; color: Text-Secondary">
+    Streamlines accounting, invoicing, and financial management for businesses.
+  </p>
+  <DataConnectionConnectButton />
+</div>
