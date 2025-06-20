@@ -1,0 +1,21 @@
+<script lang="ts">
+  import DaisyBreadcrumbsBreadcrumbsList from "$lib/Daisy/Breadcrumbs/BreadcrumbsList.html";
+  import HeaderDeleteButton from "$lib/Header/DeleteButton.html";
+  import HeaderShareButton from "$lib/Header/ShareButton.html";
+</script>
+
+<header class="topbar" style="width: 100%; height: 96px;">
+   <div style="display: flex; px-3 py-5; flex-direction: column; align-items: flex-start; gap: 2; flex-shrink: 0;">
+      <DaisyBreadcrumbsBreadcrumbsList />
+      <div class="page-name">
+        <h1 class="text-md" style="font-weight: 500; color: Text-Primary;">
+          Page Name
+        </h1>
+        <div class="action-buttons" style="display: flex; align-items: flex-start; gap: var(--paddings-spacing-2, 8px);">
+          <HeaderDeleteButton />
+          <HeaderShareButton />
+          <HeaderDownloadButton />
+        </div>
+      </div>
+   </div>
+</header>
