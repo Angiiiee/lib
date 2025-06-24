@@ -1,0 +1,76 @@
+<div class="HealthScore"
+      style="display: flex; height: 384px; padding-5; flex-direction: column; align-items: flex-start; gap-2; align-self: stretch; border-radius-md; background-Background-Background; box-shadow: tailwind-DropShadow-sm;">
+
+  <div class="title"
+       style="display: flex; justify-content: space-between; align-items: center; align-self: stretch;">
+    <span class="styles_sans/text-md/normal color: Text/Primary">
+     Health score
+    </span>
+  </div>
+
+  <div class="Graph"
+      style="display: display: flex; padding: 0; flex-direction: column; justify-content: center; align-items: center; gap: 3; flex: 1 0 0; align-self: stretch;
+   
+    <div class="flex flex-col items-center justify-center flex-1 w-full">
+      <div class="w-64 relative">
+        <div class="gauge">
+          <div class="gauge-inner"></div>
+          <div class="gauge-text">87</div>
+          <div class="gauge-label">
+            Good
+            <span title="Score is based on recent data">ℹ️</span>
+          </div>
+        </div>
+      </div>
+      <span class="text-sm text-green-600 mt-4">2% more than last month</span>
+    </div>
+</div>
+
+<style>
+  .gauge {
+    position: relative;
+    width: 100%;
+    padding-top: 50%;
+    background: conic-gradient(
+      #22c55e 0% 87%,
+      #e5e7eb 87% 100%
+    );
+    border-radius: 100% 100% 0 0 / 100% 100% 0 0;
+    overflow: hidden;
+  }
+
+  .gauge-inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    width: 80%;
+    height: 80%;
+    border-radius: 50% 50% 0 0 / 50% 50% 0 0;
+  }
+
+  .gauge-text {
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.875rem;
+    font-weight: 600;
+  }
+
+  .gauge-label {
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 0.875rem;
+    color: #6b7280;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+  }
+</style>
+
+  
+
